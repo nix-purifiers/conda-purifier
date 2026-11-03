@@ -65,8 +65,9 @@ stdenvNoCC.mkDerivation {
       --set CONDA_PURIFIER_PREFETCH_HG ${nix-prefetch-hg}/bin/nix-prefetch-hg \
       --set CONDA_PURIFIER_PREFETCH_SVN ${nix-prefetch-svn}/bin/nix-prefetch-svn \
       --set CONDA_PURIFIER_UV ${lib.getExe uv} \
-      --set CONDA_PURIFIER_DYNAMIC_LINKER ${lib.optionalString stdenv.hostPlatform.isLinux stdenv.cc.bintools.dynamicLinker} \
-      --set CONDA_PURIFIER_GLIBC ${lib.optionalString stdenv.hostPlatform.isLinux glibc.version} \
+      --set CONDA_PURIFIER_DYNAMIC_LINKER ${lib.escapeShellArg (lib.optionalString stdenv.hostPlatform.isLinux stdenv.cc.bintools.dynamicLinker)} \
+      --set CONDA_PURIFIER_GLIBC ${glibc.version} \
+      --set CONDA_PURIFIER_MACOS ${stdenv.hostPlatform.darwinMinVersion} \
       --set CONDA_PURIFIER_NIX_LIB "$out/share/conda-purifier/nix-lib" \
       --set CONDA_PURIFIER_FLAKE ${../..}
     runHook postInstall

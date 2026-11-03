@@ -12,7 +12,8 @@ Nix built of the project's own packages.
 
 The wrapper that installs this script sets CONDA_PURIFIER_* variables to
 the tools it uses: micromamba, patchelf, the nix-prefetch scripts, the
-dynamic linker and glibc version of the package set, and the Nix library.
+dynamic linker, glibc version and macOS version of the package set, and the
+Nix library.
 """
 
 import argparse
@@ -44,6 +45,7 @@ MICROMAMBA = os.environ.get("CONDA_PURIFIER_MICROMAMBA", "micromamba")
 PATCHELF = os.environ.get("CONDA_PURIFIER_PATCHELF", "patchelf")
 DYNAMIC_LINKER = os.environ.get("CONDA_PURIFIER_DYNAMIC_LINKER", "")
 GLIBC = os.environ.get("CONDA_PURIFIER_GLIBC", "")
+MACOS = os.environ.get("CONDA_PURIFIER_MACOS", "")
 PREFETCH = {
     "git": os.environ.get("CONDA_PURIFIER_PREFETCH_GIT", "nix-prefetch-git"),
     "hg": os.environ.get("CONDA_PURIFIER_PREFETCH_HG", "nix-prefetch-hg"),
@@ -59,6 +61,10 @@ WHEEL_ARCH = {
     "linux-64": "x86_64",
     "linux-aarch64": "aarch64",
     "linux-ppc64le": "ppc64le",
+}
+MACOS_ARCH = {
+    "osx-64": "x86_64",
+    "osx-arm64": "arm64",
 }
 
 
@@ -242,6 +248,11 @@ def find_source(root, files):
     die(f"{root} has no {CONDA_LOCK_FILE} or environment.yml; pass --file.")
 
 
+def default_platforms(host):
+    """The platforms a first lock covers: Linux's, and this machine's."""
+    return list(DEFAULT_PLATFORMS) + ([host] if host not in DEFAULT_PLATFORMS else [])
+
+
 def previous_platforms(root):
     """The platforms an existing lockfile covers, which a relock keeps."""
     try:
@@ -364,6 +375,10 @@ class Micromamba:
         if subdir.startswith("linux-") and GLIBC:
             # The environment runs on the glibc of the Nix package set.
             env.setdefault("CONDA_OVERRIDE_GLIBC", GLIBC)
+        elif subdir.startswith("osx-") and MACOS:
+            # The environment runs on the macOS versions the Nix package
+            # set builds for.
+            env.setdefault("CONDA_OVERRIDE_OSX", MACOS)
         if pins:
             with open(environment, encoding="utf-8") as f:
                 data = yaml.safe_load(f) or {}
@@ -790,6 +805,13 @@ def manylinux_tags(subdir):
     return tags + [f"manylinux2014_{arch}", f"linux_{arch}"]
 
 
+def macos_tags(subdir):
+    arch = MACOS_ARCH[subdir]
+    major, minor = (MACOS or "11.0").split(".")[:2]
+    # pip adds the earlier macOS versions and universal2 to this tag.
+    return [f"macosx_{major}_{minor}_{arch}"]
+
+
 def read_text(path):
     try:
         with open(path, encoding="utf-8") as f:
@@ -921,7 +943,7 @@ def foreign_wheel(pip, name, version, subdir, pyver):
     """The wheel of name==version for another platform, or None."""
     args = ["--only-binary=:all:", "--no-deps", "--python-version", pyver,
             "--implementation", "cp", "--abi", "cp" + pyver.replace(".", "")]
-    for tag in manylinux_tags(subdir):
+    for tag in macos_tags(subdir) if subdir in MACOS_ARCH else manylinux_tags(subdir):
         args += ["--platform", tag]
     try:
         found = pip.report(args + [f"{name}=={version}"])
@@ -1112,8 +1134,8 @@ def cmd_lock(args, update=None):
             "with `conda list --explicit --md5`, then run `conda-purifier lock`.")
     if update is not None and kind == "conda-lock":
         update_conda_lock(root, inputs[0], update)
-    platforms = list(args.platform or previous_platforms(root) or DEFAULT_PLATFORMS)
     host = host_subdir()
+    platforms = list(args.platform or previous_platforms(root) or default_platforms(host))
     variables = {}
     pip_requirements = []
     env_name = None
@@ -1164,9 +1186,12 @@ def cmd_lock(args, update=None):
                     solved = [by_url[url] for url in prior]
                 found[subdir] = {"conda": solved, "pip": [], "pipBuild": []}
             pip_free = free | {requirement_name(r) for r in pip_requirements}
+            # The pip: section resolved once, on the machine of the previous
+            # lock, so a platform that lock lacks keeps the versions of another.
+            kept = previous.get(host) or next(iter(previous.values()), {})
             constraints = sorted({
                 f"{e['name']}=={e['version']}"
-                for e in previous.get(host, {}).get("pip", []) + previous.get(host, {}).get("pipBuild", [])
+                for e in kept.get("pip", []) + kept.get("pipBuild", [])
                 if "url" in e and e["name"].lower() not in pip_free
             })
         if not found:
@@ -1308,7 +1333,7 @@ def main(argv=None):
     lock.add_argument("--file", "-f", action="append", default=[],
                       help="environment.yml, conda-lock.yml or explicit spec file(s), relative to the project")
     lock.add_argument("--platform", "-p", action="append",
-                      help=f"a conda platform to lock for (default: {', '.join(DEFAULT_PLATFORMS)})")
+                      help=f"a conda platform to lock for (default: {', '.join(DEFAULT_PLATFORMS)} and this machine's)")
     lock.set_defaults(func=cmd_lock)
     update = sub.add_parser(
         "update", help=f"re-resolve the packages (all, or the named ones) and write {LOCKFILE}"

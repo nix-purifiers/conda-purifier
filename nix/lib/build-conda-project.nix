@@ -199,6 +199,33 @@ let
     )
   );
 
+  # Makes the direct_url.json of each directory pip built name it under
+  # /build, and RECORD that file's new hash.
+  pipRecords = writeText "pip-records.py" ''
+    import base64, csv, hashlib, os, sys, sysconfig
+
+    build = "file://" + sys.argv[1] + "/"
+    site = sysconfig.get_path("purelib")
+    for info in sorted(os.listdir(site)):
+        url = os.path.join(site, info, "direct_url.json")
+        if not info.endswith(".dist-info") or not os.path.isfile(url):
+            continue
+        with open(url, encoding="utf-8") as f:
+            text = f.read()
+        if build not in text:
+            continue
+        data = text.replace(build, "file:///build/").encode()
+        with open(url, "wb") as f:
+            f.write(data)
+        digest = base64.urlsafe_b64encode(hashlib.sha256(data).digest()).rstrip(b"=").decode()
+        name = info + "/direct_url.json"
+        record = os.path.join(site, info, "RECORD")
+        with open(record, newline="", encoding="utf-8") as f:
+            rows = [[name, f"sha256={digest}", str(len(data))] if r and r[0] == name else r for r in csv.reader(f)]
+        with open(record, "w", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerows(rows)
+  '';
+
   environment = stdenvNoCC.mkDerivation (
     scmVersions
     // {
@@ -276,7 +303,16 @@ let
             pipInstall "''${files[@]}"
           fi
         fi
-
+        ${lib.optionalString stdenv.hostPlatform.isDarwin ''
+          # conda-meta records micromamba's package cache, and pip each
+          # directory it built, in the build directory. The Linux sandbox
+          # always builds in /build; on darwin every build has a directory
+          # of its own, so the records name /build here too.
+          sed -i "s|''${TMPDIR%/}/|/build/|g" "$out"/conda-meta/*.json
+          if [ -s "$pipTargetsPath" ]; then
+            "$out/bin/python" ${pipRecords} "''${TMPDIR%/}"
+          fi
+        ''}
         if [ -x "$out/bin/python" ]; then
           stdlib=$("$out/bin/python" -c 'import sysconfig; print(sysconfig.get_path("stdlib"))')
           "$out/bin/python" -m compileall -q -j0 --invalidation-mode unchecked-hash \

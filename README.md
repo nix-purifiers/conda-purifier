@@ -261,15 +261,16 @@ accepts:
 - `-r` requirement files, which become inputs of the lock.
 
 pip installs only what the conda packages do not already provide. By
-default the lock covers `linux-64` and `linux-aarch64`, and `--platform`
-names others. A package with a wheel per platform gets the wheel of each
-platform; when a platform has no wheel, its lock holds the sdist of the
-package and the build requirements of the sdist.
+default the lock covers `linux-64`, `linux-aarch64` and the platform of the
+machine it runs on, and `--platform` names others. A package with a wheel
+per platform gets the wheel of each platform; when a platform has no wheel,
+its lock holds the sdist of the package and the build requirements of the
+sdist.
 
 The lock run uses its own micromamba root and package cache, and ignores
 your `.condarc` and `CONDA_*` settings, so two machines produce the same
-lock from the same inputs. It installs the `pip:` section offline from the
-recorded files before it writes the lockfile.
+lock from the same inputs for the same platforms. It installs the `pip:`
+section offline from the recorded files before it writes the lockfile.
 
 Limits that affect a project:
 
@@ -278,8 +279,11 @@ Limits that affect a project:
   the result with what a YAML parser reads.
 - Every build requirement of the `pip:` section needs a wheel for each
   platform. The error names a requirement that has none.
-- The `pip:` section resolves for Linux platforms, and conda-purifier
-  builds on Linux.
+- The `pip:` section resolves for Linux and macOS platforms, and
+  conda-purifier builds on Linux and on Apple Silicon Macs. The wheels of
+  the machine that locks are the ones its own pip picks: on a Mac, for the
+  macOS version it runs. The wheels of the other platforms are those for
+  the glibc and the macOS version of the Nix package set.
 - The build runs the post-link scripts of conda packages and not their
   pre-link scripts.
 

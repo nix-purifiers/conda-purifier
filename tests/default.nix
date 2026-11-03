@@ -251,7 +251,7 @@ in
     ) "the builder is not a package of the conda-purifier scope that callPackage and override handle";
 
   # Every fixture's lock has the shape of the purifier contract. A noarch
-  # package is one entry for both systems, and a package for one platform
+  # package is one entry for every system, and a package for one platform
   # is an entry for its system only.
   lock-shape =
     let
@@ -268,6 +268,7 @@ in
       && lib.all (l: l.entries != [ ]) locks
       &&
         lib.sort lib.lessThan (entry "six-1.17.0-py2.py3-none-any.whl").systems == [
+          "aarch64-darwin"
           "aarch64-linux"
           "x86_64-linux"
         ]
@@ -382,6 +383,7 @@ in
     assert lib.assertMsg (lib.all sameSpec [
       "linux-64.txt"
       "linux-aarch64.txt"
+      "osx-arm64.txt"
     ]) "conda-purifier check conformance-external: fixtures/external differs from fixtures/explicit";
     assert lib.assertMsg (fails
       (build {

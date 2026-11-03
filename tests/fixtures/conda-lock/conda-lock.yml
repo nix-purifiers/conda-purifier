@@ -8,6 +8,7 @@ metadata:
   platforms:
   - linux-64
   - linux-aarch64
+  - osx-arm64
   sources:
   - environment.yml
 package:
@@ -57,5 +58,30 @@ package:
   hash:
     md5: d942e34ac3920ba83f8b2d0169570187
     sha256: 427fd14bcb3b8659796fecc682716617409350fb5a98e5b7b47558a10d1a2fc7
+  category: main
+  optional: false
+- name: libzlib
+  version: 1.3.2
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    __osx: '>=11.0'
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda
+  hash:
+    md5: f39288f0ea63ae962e1a2e4f355a0d75
+    sha256: a18fa5d5bac452401459f966cf0d872224e8080c4ff93c77e168d43ab42ef9d7
+  category: main
+  optional: false
+- name: zstd
+  version: 1.5.7
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    __osx: '>=11.0'
+    libzlib: '>=1.3.2,<2.0a0'
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hf451053_7.conda
+  hash:
+    md5: 4ec2684c73812cc2c3d78379384a39cc
+    sha256: da867f5092eb0cb746d353694f0098031fd9817a4ce7d5743121209ae0f406ca
   category: main
   optional: false

@@ -7,14 +7,16 @@
     "https://conda.anaconda.org/conda-forge/linux-aarch64/_openmp_mutex-4.5-20_gnu.conda": "sha256-olJ7HYF5KgzNLAWFCWDfEZwrbY9f3sl/LbfSXcI7EGg=",
     "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_10.conda": "sha256-JOrMiiD9fEYWVmF4Vivvf5NE60qHAM/DGA+nWm/5058=",
     "https://conda.anaconda.org/conda-forge/linux-aarch64/libgcc-16.2.0-h205dda4_7.conda": "sha256-6uejRJ1aO1NRxUJxN8B2zD/IJmRce/xC3BB3K3g4JvE=",
-    "https://conda.anaconda.org/conda-forge/linux-aarch64/libgomp-16.2.0-h8acb6b2_7.conda": "sha256-RAb9Z8W+65m5Ny+b8Hqj5AyhQeM37O66w/9kqnJ5lJQ="
+    "https://conda.anaconda.org/conda-forge/linux-aarch64/libgomp-16.2.0-h8acb6b2_7.conda": "sha256-RAb9Z8W+65m5Ny+b8Hqj5AyhQeM37O66w/9kqnJ5lJQ=",
+    "https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h4e30115_10.conda": "sha256-jsIvC6Jcv8LmTXDPKUWezNf/32Q29qb/Fbv+95n31PY="
   },
   "inputs": [
     "linux-64.txt",
-    "linux-aarch64.txt"
+    "linux-aarch64.txt",
+    "osx-arm64.txt"
   ],
-  "inputsHash": "7ddd863c05c9e791e33bf23fed7cca6fd5293e8490ffd3427279060bd90ba0cc",
-  "lockHash": "3dff466270e9689b995a76e7ee3ce130101b4ea11a40c1b74d05bf7907ae8c96",
+  "inputsHash": "8204edaf125532d93767232e996cf08445d45ef57f78d2712129db6672a2bfc1",
+  "lockHash": "fd2d4d13e29bef04f69d08189bb578a08dd79260641757403efd39c8a9b226cf",
   "platforms": {
     "linux-64": {
       "programs": [
@@ -32,6 +34,21 @@
       ]
     },
     "linux-aarch64": {
+      "programs": [
+        "bunzip2",
+        "bzcat",
+        "bzcmp",
+        "bzdiff",
+        "bzegrep",
+        "bzfgrep",
+        "bzgrep",
+        "bzip2",
+        "bzip2recover",
+        "bzless",
+        "bzmore"
+      ]
+    },
+    "osx-arm64": {
       "programs": [
         "bunzip2",
         "bzcat",

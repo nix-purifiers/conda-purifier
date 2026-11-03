@@ -3,7 +3,7 @@
     "environment-dev.yml"
   ],
   "inputsHash": "e6c7536cd95b6bb02e7aef1727f985e637785ba4f1575eb1395d36ce02e09870",
-  "lockHash": "904833c0b7a30378dca727b17eb806fb3a6c630374a424f47abb1ebf3381c528",
+  "lockHash": "c9a04e78ff664e913da70af5c849310d1a55c2031272814909f73ee7681fba10",
   "outputs": {
     "name": "geopandas-dev"
   },
@@ -3128,6 +3128,1307 @@
         "xmllint",
         "xslt-config",
         "xsltproc",
+        "zstd",
+        "zstdcat",
+        "zstdgrep",
+        "zstdless",
+        "zstdmt"
+      ]
+    },
+    "osx-arm64": {
+      "conda": [
+        {
+          "hash": "sha256-GO7jRp3aVVEf3r5nz0qOQej6ADnhYJcYEMM8PrZ1Ngg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpython-3.14.10-h281bc5c_100_cp314.conda"
+        },
+        {
+          "hash": "sha256-nDkLT0A9syNGdUzO9rhLfl2bcMttdiWP0jsF8tsqshY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-23.1.4-h55c6f16_2.conda"
+        },
+        {
+          "hash": "sha256-lXRpxps7nJ5q5I3BJnxcnf4NueGu+l+pq/l5giSqI8k=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libjpeg-turbo-3.2.1-hb001647_0.conda"
+        },
+        {
+          "hash": "sha256-sVXFJBGPdRrYscgjOXuri39xX348oQR5klhnp+I+fp0=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.9.0-h6111c0a_0.conda"
+        },
+        {
+          "hash": "sha256-oY+l1brEUkAUWflmzw2HIiToCAxP+Tx34WjUOrQu+dc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda"
+        },
+        {
+          "hash": "sha256-I9BjAEaj6LFk2PgPK3TtJgWvLnBQq5kTAYBWQC+uQxE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/liblzma-5.8.3-h8088a28_1.conda"
+        },
+        {
+          "hash": "sha256-aJoUloJn8vl8BxEvylY259dWA2ua7paZESZ8IL0+6h8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.18-he4c29f2_3.conda"
+        },
+        {
+          "hash": "sha256-XAb4ZNa2483fORWoWaEVFlfjNzYjAddl0kniQVY8xnk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/icu-78.3-py313h8c68c59_2.conda"
+        },
+        {
+          "hash": "sha256-NqFgXqJY6oBf1aDyPwfOP+vPSsBB0eqZ0LMZArefQ1g=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/giflib-6.1.3-h74c22ad_2.conda"
+        },
+        {
+          "hash": "sha256-2Jb0qkzkxZDCg4Z4yxkXNW/bRh0qGJmRwCgMgYw2IXI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda"
+        },
+        {
+          "hash": "sha256-D/VGUNRwx+VMvv/dU6jAY+BVp7z3hDiMA4XOXEdBsPQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libwebp-base-1.6.0-h202fb40_1.conda"
+        },
+        {
+          "hash": "sha256-pS8cCHjpRan0FNNj8zWSttyD653w3avHQr06TB3Whic=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/json-c-0.18-h74c22ad_2.conda"
+        },
+        {
+          "hash": "sha256-cCSkjIwNARTtSrU8dr+SddUOkbp86jZ6murWONPCnGg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.6-he64c551_1.conda"
+        },
+        {
+          "hash": "sha256-BMwTbFqVanOqFOChYLWCKwspcU5nspn6Gx/Rbby6U2Y=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libmpdec-4.0.0-h84a0fba_2.conda"
+        },
+        {
+          "hash": "sha256-J4M4mnud2gTGLMVMa76wPdPO8ks/xkJxXQKj+hlGSpo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libffi-3.7.0-h47dc5ef_1.conda"
+        },
+        {
+          "hash": "sha256-jsIvC6Jcv8LmTXDPKUWezNf/32Q29qb/Fbv+95n31PY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h4e30115_10.conda"
+        },
+        {
+          "hash": "sha256-TuJBOBDF7wfimkwqOdEfCPJ9F+zuNXdUHk2tBvY1s3U=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlicommon-1.2.1-h1dcdb26_0.conda"
+        },
+        {
+          "hash": "sha256-dLUteEs1dmQ9o66hJApBIMHyXuBX8UrlqJ6Kez+y5p8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/c-ares-1.34.9-h74c22ad_0.conda"
+        },
+        {
+          "hash": "sha256-6oxoCSTZV+EicNylSWIDJ9XphvI8S9X0VicWfKbvejs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libntlm-1.8-h5505292_0.conda"
+        },
+        {
+          "hash": "sha256-rhqC5izU48GOAFrn/0NY7XKyv7/pkNWmpVh/gemhANw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libutf8proc-2.11.3-h2431656_0.conda"
+        },
+        {
+          "hash": "sha256-OT1HFRPFrAjhJ3ttca5yeHdFTTXPlAQF3vraCrWfywk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libopentelemetry-cpp-headers-1.30.0-hce30654_0.conda"
+        },
+        {
+          "hash": "sha256-zG1n31bU6pZ+F9k40xCM332XFTE1Dfnn/F4Yy4kGanA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/llvm-openmp-23.1.4-hdb3d66b_0.conda"
+        },
+        {
+          "hash": "sha256-PHI1sVdJB3N9CbRrOg9/D1/K/COA8sjQL8VaojzkfDw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/nlohmann_json-3.12.0-h784d473_2.conda"
+        },
+        {
+          "hash": "sha256-wBAAZFBq6Ku0MsWlBtR08Qryz0jDPWK8Ih+yi21v9qw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libev-4.33-h1a92334_3.conda"
+        },
+        {
+          "hash": "sha256-ldXxa/pi/1CYCl4DKZILsrXsZtDg1sh5VGA3E8NRns4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lzo-2.10-h74c22ad_1003.conda"
+        },
+        {
+          "hash": "sha256-sDQzsT2J9VZ+go6p8afVxdaXvzdMKKQWjXHpRk9dr6w=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda"
+        },
+        {
+          "hash": "sha256-DrfPA3jP1FxHKeLu3YlrwfqwGHLR7SBNbqi7+FOgE40=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fribidi-1.0.18-hb001647_0.conda"
+        },
+        {
+          "hash": "sha256-0WO7Whf/trTJiIdIbaDtUiSmssg7ZwSRQ4lFjBdKvrY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-common-1.0.5-h602ebc4_0.conda"
+        },
+        {
+          "hash": "sha256-MCQLOde5Vuj3qCMf+gwfzglxJOQLPrSKUj0T05N+MZQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxdmcp-1.1.5-hb001647_2.conda"
+        },
+        {
+          "hash": "sha256-zefOyrtmK0NeZTdZHlhF6HCgZIiHVC0+U4yfbCDda+U=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxau-1.0.12-hb001647_2.conda"
+        },
+        {
+          "hash": "sha256-P3lFLb2j/rr3BTSG5IRPqUWsz0106sQWnixNXcXk3Qs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pthread-stubs-0.4-hb001647_1004.conda"
+        },
+        {
+          "hash": "sha256-EX6Fbff8zjdPGoch/KUh51nNhhAQBH/F4nf4rxP0SPg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libhwy-1.4.0-hd2bdd19_2.conda"
+        },
+        {
+          "hash": "sha256-UGOerpGmGGTS+sMmYwy5x+qqAItu5+IweQceZcRvohA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.15-hf6b4638_1.conda"
+        },
+        {
+          "hash": "sha256-R3nNVyMc4ulvrGQ/y91Kb1GleYYmRUVEVXTpxKz1JtM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pixman-0.46.4-h784d473_3.conda"
+        },
+        {
+          "hash": "sha256-MCj4+FfUOERNP7VsnHTUZpnLBOZ2xldXR8862NmjCLE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/gflags-2.3.1-h784d473_0.conda"
+        },
+        {
+          "hash": "sha256-HywCkPf4hHmknfLlOs41dcaP5B7cIEh1+xBCMxL7fkc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/snappy-1.2.2-h3951085_2.conda"
+        },
+        {
+          "hash": "sha256-J4WdhSdkQpYbAbz8SI3IVCYQkzD/sVfTIkdyp+qnKnU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libabseil-20260526.0-cxx17_h4c27e2a_3.conda"
+        },
+        {
+          "hash": "sha256-WEd7Z8xxkGC1sGm6VxYeILppuGldFUpxnLS2DK9XeSk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcrc32c-1.1.2-hbdafb3b_0.tar.bz2"
+        },
+        {
+          "hash": "sha256-ZPfZwie/+BF8IZ7MCgGGhEl0j7ZU1kd95EGJAWZ5ZTQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/simdjson-5.1.1-he80e296_0.conda"
+        },
+        {
+          "hash": "sha256-ozlgamsiS7Iw/z1xHoAZNPOzhEJx35cgFl4DU3FlgNQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/zlib-ng-2.3.3-hed4e4f5_1.conda"
+        },
+        {
+          "hash": "sha256-+gvL+yClCMqb9IIjb+eZWBy9DqsBbkeoZen6RNvjxRI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/uriparser-0.9.8-h00cdb27_0.conda"
+        },
+        {
+          "hash": "sha256-GIeGezk+s8KzNt6v/PIoV0gh6h4Ny573v2yfWc7EDwM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lz4-c-1.10.0-hdca3b7d_2.conda"
+        },
+        {
+          "hash": "sha256-k7EYnPPke5P+YT3AghPPIriSZQCX6N93UZ5Q+TAen2I=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lerc-4.3.0-h0699d0c_0.conda"
+        },
+        {
+          "hash": "sha256-hzrGiUhCYqUf15vGEDwaG+2/Ukkk1/AIj7gHAwQoBeQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/qhull-2020.2-h420ef59_5.conda"
+        },
+        {
+          "hash": "sha256-a7gByyO36ITC5s6W2TPRQdbYetB/W/jRPWpZo0A5Uvo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/geos-3.14.1-ha834cd8_0.conda"
+        },
+        {
+          "hash": "sha256-hX2JCHrn8sMozyVnKK/8tzQwMaFItK+EczTSSKnPVkw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/tk-8.6.13-hbeba79b_4.conda"
+        },
+        {
+          "hash": "sha256-2oZ/UJLrDLdG01NpTwCYAx/ZgXpM59V0MSEgmuD0Bso=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hf451053_7.conda"
+        },
+        {
+          "hash": "sha256-q0bYXk/P//GxxcrFF6+kC3rnhM92/J2h9V9qaTQpHrY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.3.2-h8088a28_3.conda"
+        },
+        {
+          "hash": "sha256-TeTcTLdDLDKMHq9PfMnGtIwHPqsenGcj1FM+bVfn1ZU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpng-1.6.59-hf5e6511_0.conda"
+        },
+        {
+          "hash": "sha256-tDxmReZo+G0E1cBtbcF+/pIbvZJEvkt3lG1W+5UKP8w=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-hae62183_2.conda"
+        },
+        {
+          "hash": "sha256-yMMVPfOavt80E0g/ZyFRrXDxrbDAbBkr337EMsNhawc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpsl-0.23.1-hdb0c161_1.conda"
+        },
+        {
+          "hash": "sha256-F/SwibZMs8wZTPfRLnOB/LJJBsljAc5jLT0ECdBgeiQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/xerces-c-3.3.0-h38da0c5_2.conda"
+        },
+        {
+          "hash": "sha256-mYzRIgJ7JSPy8lgHsdR2uCoWhInRaxQw/YSKmmtgaoA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.54.1-hca69786_0.conda"
+        },
+        {
+          "hash": "sha256-Gs1N1JxvVEQNwXKrRp0OLHw8At5bHyEViiM+tYXsPDg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-16-2.15.4-heb56d2d_1.conda"
+        },
+        {
+          "hash": "sha256-VpKpaeSbIAx4dNHoadKBdTNhmAsuz+kZG1cdflUPi5I=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libedit-3.1.20260512-pl5321h26f1114_0.conda"
+        },
+        {
+          "hash": "sha256-1ngrQw5tzk/ox6wRjNmI1aGT60p/YHQe367eWAFrYRA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.3-h8b90a29_1.conda"
+        },
+        {
+          "hash": "sha256-+MQVMptULh/KH/KRe4Dmh8GDAt+gNTUwZouQyyJbSU8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pcre2-10.47-he63d830_1.conda"
+        },
+        {
+          "hash": "sha256-VXKhbwilJ/e5UtElvjwyFbSwocgWPvy2/QUsiJX8yO4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlienc-1.2.1-h2ddc9cb_0.conda"
+        },
+        {
+          "hash": "sha256-13NWJnvzRjkmXsebIX7+CzL8LpH0ynoEJjpRacsVZFg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlidec-1.2.1-h5295a6a_0.conda"
+        },
+        {
+          "hash": "sha256-x8mM509qf/JaqkcG0G+kHWOjM63U1pe3OqTY0tetdlE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-8_kmp_llvm.conda"
+        },
+        {
+          "hash": "sha256-zEDFfb+kiQhzg18iQVdgSIMZsD1O38EThrLpC4nwEdo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/muparser-2.3.5-h5af64e8_1.conda"
+        },
+        {
+          "hash": "sha256-C//c6LApv18EVXgyeaN38cjJnClLDn8rVcz1qcok9i4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-cal-1.0.0-h50d513f_1.conda"
+        },
+        {
+          "hash": "sha256-qV62R1+IiXsHtL+S7llsd1erDhL1VIBEfqFKWtsKEzc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-sdkutils-1.0.1-h8339b81_0.conda"
+        },
+        {
+          "hash": "sha256-43tqmO4Lg+spSo9eM05rMNZpCj4htOCgj4/PnrmvXSE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-compression-1.0.0-h50d513f_1.conda"
+        },
+        {
+          "hash": "sha256-ALCBrU8m7a6HyLn9iE35aZeHhQxkQZupY8RPf1ux8Qw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-checksums-1.0.0-h50d513f_0.conda"
+        },
+        {
+          "hash": "sha256-9VwVtmyK4n2OMERRk6zASbKA61GkfW8XU77VrCk3ohc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libxcb-1.17.0-hbffa61f_2.conda"
+        },
+        {
+          "hash": "sha256-GsWZH9NU3oG684kv7grQlDhiNpj8rXN1hSHf6QcR7UQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/glog-0.7.1-h6f9ecc1_1.conda"
+        },
+        {
+          "hash": "sha256-ztF+15z58/UINOYXdcjFEM/K5JJ6w21twl84YRuWQEo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libre2-11-2025.11.05-hc0bb115_2.conda"
+        },
+        {
+          "hash": "sha256-QSnBNznjDfurjCBZSs2MGC3iAI9N/JTVT1K1Vus5BQw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libprotobuf-7.35.1-h391e224_3.conda"
+        },
+        {
+          "hash": "sha256-v8bAsfMN5STjJw7tIXHYfmuWVS/5DPKl6zTADWvLPfo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libkml-1.3.0-hb833057_1023.conda"
+        },
+        {
+          "hash": "sha256-szRBK32ChzzUbORtNyn4oOAl8cx01P1BL5kDG+OZcLQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/librttopo-1.1.0-ha834cd8_21.conda"
+        },
+        {
+          "hash": "sha256-hH0iqGrij2bTiIcCaYJU0lu06sOg9kwfq/sYQqwAvkw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libtiff-4.7.2-hf67920b_1.conda"
+        },
+        {
+          "hash": "sha256-vHrOb4NPMSmq9enx+/kxvnMOmTOYLtbt3pinWAjEgSA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/blosc-1.21.7-h1de0848_0.conda"
+        },
+        {
+          "hash": "sha256-2bID1khK1JG1tfM9SanXqRGJ13apra5T0rY68Y7BHmo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libfreetype6-2.14.3-h2ed5691_2.conda"
+        },
+        {
+          "hash": "sha256-8zO0xsgj6jF66wuBdSCuO6L7Fid5I9hI9fKu4gSRmOU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-2.15.4-h550178d_1.conda"
+        },
+        {
+          "hash": "sha256-SO+oHx42AdtQFGfPyFGgccNmSetPzkZiA6LymQGmz5A=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/sqlite-3.54.1-ha9f7ffe_0.conda"
+        },
+        {
+          "hash": "sha256-TsZMR2iBsx8hGEKVLxkiCKOvCSWlltoif02X+5pj4Kw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.90.0-hccd281b_0.conda"
+        },
+        {
+          "hash": "sha256-UB7wzYg9RmpjAhLsGHn0zPLH1PitVOIaJjcX2LhkXnM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/brotli-bin-1.2.1-he4a93e4_0.conda"
+        },
+        {
+          "hash": "sha256-d/pbqDvbrS+hTmKhvKqCUpr1j4coER3TjfXfYfuv9cA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libjxl-0.12.0-hb71b141_4.conda"
+        },
+        {
+          "hash": "sha256-3qz2K9bLvgXrCF3WmiyhIAU1l8NwZtU8j3z2gV8m6es=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgcc-16.2.0-h3cf6597_7.conda"
+        },
+        {
+          "hash": "sha256-pzR2vrVatO6Jwc58AW1+Wo07Fz/A+/l8Jtiknu1YRbA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/re2-2025.11.05-hb8e9f31_2.conda"
+        },
+        {
+          "hash": "sha256-5xvQS10OOfOaPAOdAh07ds1lvuMDLn+FmrcILwrOi+U=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.4-h4d1e80c_2.conda"
+        },
+        {
+          "hash": "sha256-pUdPte6g2NchnCk2LfFhMn8J8CyzLxHFq0+nRg/ns1Y=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lcms2-2.20-hce41798_0.conda"
+        },
+        {
+          "hash": "sha256-Gc6L0yBBTLa5iJ7L9Io97YSLDRBot2/2vqCZvXOH1vM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libfreetype-2.14.3-hce30654_2.conda"
+        },
+        {
+          "hash": "sha256-0zxX51JAV0X/cXCKXPXIe6d5Q0cAoqP7AFPP5seYAhc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-devel-2.15.4-h550178d_1.conda"
+        },
+        {
+          "hash": "sha256-3HnDGnbz0ux0IMC+Y9aPnZ9aVKqhmcJ+3VVaBEGhUxI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/brotli-1.2.1-hf00d406_0.conda"
+        },
+        {
+          "hash": "sha256-GSl+XPOd6XbN0aRkmaThX99U0knTIx87Kp1DrzvgvGY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran5-16.2.0-hdb7a957_7.conda"
+        },
+        {
+          "hash": "sha256-AEVw01+w7/c8465JsgmkdiLQwuWA3Q3Exh1ZYms4agk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fontconfig-2.18.3-h81aa574_1.conda"
+        },
+        {
+          "hash": "sha256-kGgfHQZYyy/UmgdPZE60d0JySZKQSHpL67HE3wHWmXs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/freetype-2.14.3-hce30654_2.conda"
+        },
+        {
+          "hash": "sha256-pbS2PQ70x8WcNyJbnwMHtc0qOoSZsqQLbd0rnwcnEqg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-16.2.0-h07b0088_7.conda"
+        },
+        {
+          "hash": "sha256-GPFn/aom9noSPFl2b0cwtBhm0sCSC1wp10qT06LpKpY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libopenblas-0.3.34-openmp_h5e6e99c_1.conda"
+        },
+        {
+          "hash": "sha256-cYw+GhatlGyu66BBUg3Bi3r0YSJr2MKPrveLGBkg27Q=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libblas-3.11.0-11_h51639a9_openblas.conda"
+        },
+        {
+          "hash": "sha256-POvWcti9fHdqOBQi6j/EgTE0Ou2ih5l0c0cVrGoFwpI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcblas-3.11.0-11_hb0561ab_openblas.conda"
+        },
+        {
+          "hash": "sha256-52l992HuskMnKAGoyIPcHeYBin9zh0a0Q+8TlvCngHU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/liblapack-3.11.0-11_hd9741b5_openblas.conda"
+        },
+        {
+          "hash": "sha256-5/jpZbv7mOCP6yNlys2ti7IY+ltaCidS90cof0JfITw=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-9_cp314.conda"
+        },
+        {
+          "hash": "sha256-lWGbnBGEvnF1OS7rDufutczyXSgJUfQiXy1i5yV5C+M=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.10.23-hbd8a1cb_0.conda"
+        },
+        {
+          "hash": "sha256-K3yoWIefGDzi3MZbMA9IoBM9VDBVDzWyPYDUBaB4jb8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/tzdata-2026e-h5d301ff_0.conda"
+        },
+        {
+          "hash": "sha256-WNf0DSlA3QqKooZRI5rb9WEyVN8PdXiZGcTmdiBUQDs=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2"
+        },
+        {
+          "hash": "sha256-xSop/axoLCDSUvrMUPAefC586sUqqYF6rwu4P3VZ7Fw=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2"
+        },
+        {
+          "hash": "sha256-AJJcjAVaInVhS02YPh32NyReGQWNefx90ak7jZ+0sTk=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2"
+        },
+        {
+          "hash": "sha256-KCHsHcRUvYuaMdDtIqfOIkIsCu8WPFn0nf35FdDwyhQ=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
+        },
+        {
+          "hash": "sha256-VO6oRpeGvCKRzEC8pfRkONPgYqOZ6PU/ATtqn1DpgzM=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda"
+        },
+        {
+          "hash": "sha256-qZfy8ZIbucnXbm+i9rQIt/pUnt00mndjnJ/noj6pPmE=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
+        },
+        {
+          "hash": "sha256-RPvFJkVlcan7j6GBV/byadTUvUDu8gGDqTuckpb5RJc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.5-h55eecbc_0.conda"
+        },
+        {
+          "hash": "sha256-EbjnHs351QycUkngCbn30T1t9oCRvXD+IC88PBbQ49g=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/orc-2.3.1-hef2a647_0.conda"
+        },
+        {
+          "hash": "sha256-Mq2bcx0LTG3YIGEgEgYWSwe9aVvGleXrOt3ACH7VTMo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cairo-1.18.6-h580cee5_0.conda"
+        },
+        {
+          "hash": "sha256-be4VZEw05DeSDxFHl0UyzcwDk1myQbfqpfve4nXsRiE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libevent-2.1.12-h4b5715a_2.conda"
+        },
+        {
+          "hash": "sha256-CnN769J21I8ENoQspHs4uCO0+OPDBlhIydH0IfM0pKo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/minizip-4.2.2-h56c1371_1.conda"
+        },
+        {
+          "hash": "sha256-ZD9ne3TadC+0d6LMsUdFoNmSydQPHwS0Xey3pOjwelA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/s2n-1.7.7-h430f396_0.conda"
+        },
+        {
+          "hash": "sha256-y3dz41sppDT2CpY4/kl4JeXs9diD6/nm2URGvtxQ0lQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgrpc-1.82.2-h74070d8_0.conda"
+        },
+        {
+          "hash": "sha256-oFblGMPS0J+7F3jOqAwMlTOPskrfGoF7v5D7SEhQowQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libssh2-1.11.1-hbf2880b_1.conda"
+        },
+        {
+          "hash": "sha256-quodQrB3aZINsq90cezpOZ0mE0SIY9pkrYJymY212zQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/krb5-1.22.2-h34f8a20_2.conda"
+        },
+        {
+          "hash": "sha256-1TMlbNuRxnaxBnKOhDel2W6cAtxqmblI8bBLBKkmIMI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libnghttp2-1.71.0-h29223de_0.conda"
+        },
+        {
+          "hash": "sha256-gXopd98MymsNwqn53LHeGEdV/NIAwRGuyclFeJCKCLE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarchive-3.8.11-gpl_h76147b0_100.conda"
+        },
+        {
+          "hash": "sha256-SEdQorv2XiRGqQcxxqtlpo38bw5XYTIehb9eI7+tdAE=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/python-3.14.10-h0ae1c2c_100_cp314.conda"
+        },
+        {
+          "hash": "sha256-HPeQDP0XtgqOP3ajHKlRQN7KR4GJnikLSZtsqtggWLI=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libharfbuzz-15.0.0-hcda0f7c_0.conda"
+        },
+        {
+          "hash": "sha256-T9cn+GXVeYBNHLIll9Pe1XBhAU3E8uqYEsQN3GmCCgw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libthrift-0.25.0-h0c58e91_1.conda"
+        },
+        {
+          "hash": "sha256-b5WDTbJppeEAYDEtWXZr/7I+iak1b18WSIqYoXwR4bY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/freexl-2.0.0-hdc332e9_3.conda"
+        },
+        {
+          "hash": "sha256-m8m6pTiSpwJZuuUTLesDLUYw3BPSe29WxSSqDvoQBnk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-io-1.0.0-h49e100f_0.conda"
+        },
+        {
+          "hash": "sha256-K7Goz8JTSwVxjCH/rNgGxcPVKJyei+EicNn8VgbIWb8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cyrus-sasl-2.1.28-hb961e35_1.conda"
+        },
+        {
+          "hash": "sha256-2fYFJbZl5Q2hXIT8tOdOax8KVupMiaAtQljyPD/h8Cw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcurl-8.23.0-h6651222_0.conda"
+        },
+        {
+          "hash": "sha256-LAe98CYKWRNy4/IDT78RlZMO42IuUJu+mdzKjFIbKp0=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pyyaml-6.0.3-py314h26178bb_3.conda"
+        },
+        {
+          "hash": "sha256-fcOx2sj2HbRYJyYN6+nGVPwtL6AZDKVSPMexADc5O1Q=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/markupsafe-3.0.4-py314he08ecf6_4.conda"
+        },
+        {
+          "hash": "sha256-Bj1447g+lVPRaXZXFhmuBZg9iTSQiIzdFPGlQLqp4jc=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.2.1-py314hee34562_0.conda"
+        },
+        {
+          "hash": "sha256-Nrb41WNZR5KwTTF+gYOR1owe8gCqdqalyn6RjH8AjZM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/coverage-7.17.0-py314he08ecf6_0.conda"
+        },
+        {
+          "hash": "sha256-NsoVl5HV3BEl72ALpvyFRcjWIaBV8wpeGyxzLdGEuks=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/geoarrow-c-0.4.0-py314ha630e2e_2.conda"
+        },
+        {
+          "hash": "sha256-pfBbdG+3H58rdn695Ez3tySyVQ/5ZJ8RA0rPTYK6iKU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/kiwisolver-1.5.1-py314hb1acb19_3.conda"
+        },
+        {
+          "hash": "sha256-bT65LzNGyiprVZzQrWWlrZYVflDwlmCzfcv0WXC1S+o=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pillow-13.0.0-py314h709c99d_0.conda"
+        },
+        {
+          "hash": "sha256-sYcG/dACLwRnkSlWok0uKBgLo30UVVvl44K+pRhppq4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/tornado-6.5.10-py314hcd3153d_0.conda"
+        },
+        {
+          "hash": "sha256-5qYMnAKv30LQDCt5eRYFLxnuwvWrCnHOl2+01v5GEeQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/numpy-2.5.4-py314he06036b_0.conda"
+        },
+        {
+          "hash": "sha256-/REe0coRBcuGZmrWQbCLpqFbkLRpLPILu9IeS7AdNpo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ruff-0.13.3-h492a034_0.conda"
+        },
+        {
+          "hash": "sha256-sRD3+bLOxh6nk8UhlQQU4AzWSCbhiutKtANprPBcADk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libraqm-0.11.0-h45af499_0.conda"
+        },
+        {
+          "hash": "sha256-n9ySBfcsaJXn0qlMgglIgmu01rUSRwywfLU1osDs+Ts=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-event-stream-1.0.0-hecdd477_1.conda"
+        },
+        {
+          "hash": "sha256-U7OvgMt9/2c8yixMb6uo/M2cCSwS67WdUAb7EDZY55w=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-http-1.0.0-h7b2e6b5_1.conda"
+        },
+        {
+          "hash": "sha256-SntpGlsiQe4Q9ZqeUfaL5M8eQpSCnOu0DRmBOaVh54A=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/openldap-2.6.13-hf7f56bc_0.conda"
+        },
+        {
+          "hash": "sha256-aK6TpqZUnRJF1c0A4FzFHiojTCd2Xaw4x5jHJF9ySYY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/prometheus-cpp-1.3.0-hfe14bbf_1.conda"
+        },
+        {
+          "hash": "sha256-lkUHPEaCrTozSisGxfwN3Ff8nw9TfMMSMFNjTJLChiU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/azure-core-cpp-1.16.3-he5ae378_0.conda"
+        },
+        {
+          "hash": "sha256-SeTpn0U+sibO1QCk67EwVi12hSE1gu/bEe1rjJBGH04=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/proj-9.9.0-h577a38b_1.conda"
+        },
+        {
+          "hash": "sha256-dEVa0v2a3EakPHXOp8osgAWI2oh4UMoyBeE23izsA+Q=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/contourpy-1.4.0-py314hb1acb19_1.conda"
+        },
+        {
+          "hash": "sha256-RXJN+/0a8OMEIOLsHpeDQqrYZ8uhcJ3xEj1/OT9XyTQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/shapely-2.2.0-py314h9c4c560_1.conda"
+        },
+        {
+          "hash": "sha256-DNYi0ueCwi+hRV7YXVLq2sGIJtaJRRfn7FvXOM2OkBo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/scipy-1.18.1-py314hd9f3d4e_2.conda"
+        },
+        {
+          "hash": "sha256-FMKJ3A70BS2LEtxeOcYNzxBG4IIeFE//ubFCwhUT5YY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-mqtt-1.0.0-hfbb46d0_1.conda"
+        },
+        {
+          "hash": "sha256-r2im49ga27BzI5+rgWev3hy5pXWOiL2SK+F97yX/5SY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-auth-1.0.0-h7ad4001_2.conda"
+        },
+        {
+          "hash": "sha256-E+nuOBN9dIIEMi51SCL0thX+0TRWVkgi85ycg9L5mO8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpq-18.6-h0a198e3_3.conda"
+        },
+        {
+          "hash": "sha256-cbTy/Bv7CBUJRpDLaZ5RnncXAPCCKGkZoEj5n8Q5wZw=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libopentelemetry-cpp-1.30.0-h46c1d2a_0.conda"
+        },
+        {
+          "hash": "sha256-mhtuUoTx8kIzDfoeIUCP/YI6dt9CQQjYwxnCpG32Hbo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/azure-storage-common-cpp-12.14.0-h7cba3ab_1.conda"
+        },
+        {
+          "hash": "sha256-2VD7UTMRoVzUrmY82sssA1Ei9gmpx5CXNmGzjgiC5A4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/azure-identity-cpp-1.13.3-h05177fb_2.conda"
+        },
+        {
+          "hash": "sha256-dgFfgh1629yAPBquXNqjEajDCIrSGDufUHqwVRCAq2c=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libspatialite-5.1.0-gpl_h16ba230_122.conda"
+        },
+        {
+          "hash": "sha256-FClXD5JX52HPOWUBLwJhDwoxdPhOCwCQHVPP7PhYYAU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-c-s3-1.1.3-hffd187b_0.conda"
+        },
+        {
+          "hash": "sha256-S8pmuJjw2MUgzF/SwQSnYlQi4WFgwYwVBYS9Bq8BYPU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/psycopg2-2.9.13-py314h943ae1f_0.conda"
+        },
+        {
+          "hash": "sha256-W/UsO7cr7Uaw6RK4bEbH9Phen/fsSzRgskzp1zz4SMY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/psycopg-c-3.3.4-py314h5f75c58_0.conda"
+        },
+        {
+          "hash": "sha256-mcfBr/iETw9hqhbWKBZyT3EPIEmHBXjsHUNXhmht0ts=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgoogle-cloud-3.12.0-h575df3b_1.conda"
+        },
+        {
+          "hash": "sha256-PwltfNb9d4jVeIfD0+SL4evFw6lxZm3cDdijSTpbfLU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/azure-storage-blobs-cpp-12.18.0-h409340b_1.conda"
+        },
+        {
+          "hash": "sha256-Jk1nw94PCAAizHhEBxjMW6ZGW2Eu81a0IB7wJ9CFT+4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgdal-core-3.13.3-h8348644_5.conda"
+        },
+        {
+          "hash": "sha256-XLGTin5xY3AQRohR9tiaafzTlrhhb35vSyQ7l/jhn9Q=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-crt-cpp-0.43.8-h573b1c7_2.conda"
+        },
+        {
+          "hash": "sha256-bDIQyAPQYz7dNYtN54fg95Amlx8Gq4ndAjLc7MRGDVs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgoogle-cloud-storage-3.12.0-h31a50c6_1.conda"
+        },
+        {
+          "hash": "sha256-+yENjQaN9ypoxfplXPH4FnkuJ42jBBxIVHjnkk1ugOs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/azure-storage-files-datalake-cpp-12.16.0-h16bb3af_1.conda"
+        },
+        {
+          "hash": "sha256-ISX3LHFm8kWfdEKWKeOfCbfCGSFXvKYcuZUS+dV0msk=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/aws-sdk-cpp-1.11.905-hee9c064_1.conda"
+        },
+        {
+          "hash": "sha256-kjPA3TYPt4o6OCwwC1YCTt7rEWoNBY6PyEumX0dlbEA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-26.0.0-haaa908f_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-L8hzfxOorf0me4wcw+wJW2KoNjRQANVTq9z1f0tMnWU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-s3-26.0.0-h4608d30_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-k/Uq3ALqsPdszDHcdUpQQsUVmNuCgMhDfg++TxYkM5w=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libparquet-26.0.0-hb52c671_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-IV2a6LKE9nLJtJ5dX80oFX3sXl97Lk+eWXu00c6MRQg=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-compute-26.0.0-h777de72_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-yTyCIV9Hyk+qqzfp8z8EvycBEHcRLiPqUF8bzmueFQs=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-acero-26.0.0-h24d86a9_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-G9NiAjplon5XkR78l5ZHw3usLcEgPSMBFIyc/aXNemY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pyarrow-core-26.0.0-py314h7e6a90b_1_cpu.conda"
+        },
+        {
+          "hash": "sha256-YDcVGTOTgy/7NOdsO/3tl9nepd3vCAo09JPLxDPBIeY=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-dataset-26.0.0-h24d86a9_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-rxdGhmM1ILjJ1IbTIU7eIA7D5m0kf3aJrtFeZJx2YVM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarrow-substrait-26.0.0-h2208e57_3_cpu.conda"
+        },
+        {
+          "hash": "sha256-U0DZyntm04lj6lhsD9xNY6OIcv4oIBmUK+dJF8mgzeA=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pyarrow-26.0.0-py314he55896b_1.conda"
+        },
+        {
+          "hash": "sha256-7vsbIUDBpsM6hRhvlU6FfhqCQ2Xe7aThHbm5nBtZUKo=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pycparser-3.12-pyh5ded981_1.conda"
+        },
+        {
+          "hash": "sha256-1psyZmcutzHVqS79/6Xhe+9PCPCMz7EQU+tTeopmhto=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.28.0-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-oy0X/peeWf4SlYdbXU8EMadt+7/O5bAeZXqKo8ShtdE=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/threadpoolctl-3.7.0-pyhc455866_0.conda"
+        },
+        {
+          "hash": "sha256-DCRSxgre26cHI48Exw6yUgIOApNX/YnMdyqqWzteQaI=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/soupsieve-3.0.4-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-ujsDL6UnCc4Nn9OI9j0zCgJnVFh6L0YRF8rJq3PY0Ng=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha55dd90_7.conda"
+        },
+        {
+          "hash": "sha256-yEvkonecu38me0Ns72+zX8iGEKuNQNq8s2DpJoIIgeo=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.8.0-py314h723298c_1.conda"
+        },
+        {
+          "hash": "sha256-/c6l18sxRIXTkHGS7wJMcEMRVIxbDL6zkM0ZUQUeKdI=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/hpack-4.2.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-d69vX+i2LKB9CaxgEnow2Qaf3Dxo1rJWdU0P+x93efg=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-TCh8JyHYo0yUkovo/g6ahXVOkBid1DhKMbGAaFa1Cmc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/cloudpickle-3.1.2-pyhcf101f3_1.conda"
+        },
+        {
+          "hash": "sha256-nkCneC00DvIODq1tfsycGfXbihqLj+neZsKrQE/CAAQ=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/distlib-0.4.4-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-RyAOu5O2XLVv5Xyyky2MgN9ee38edL7doTpU8wXXrSg=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/filelock-4.2.4-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-qynVfccHhsEmljO6Pf8gKIuBZk0/+NIa+ZV0LiuwMoc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/colorama-0.4.6-pyhd8ed1ab_1.conda"
+        },
+        {
+          "hash": "sha256-j1OHbQ+zUlI145Y13VVjOr4KQwexs6sUFcgKngu99mM=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/iniconfig-2.3.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-k7b1F/t63/ALYr4Ct5jThKGzTQ42j9tXb7JIvLO7nsc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/tomli-2.5.0-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-9fAV/xvD4bf8CO7glrGGUjQYmuC4K+vbhqU2kRbkL6A=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pygments-2.21.0-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-NMQBBrwxcrOkdlboSDfhOl1IKdQT1l8w+yFOdWignOo=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pluggy-1.7.0-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-ZMX9N3kwRHQ/xqo84EqEw/2xEkLUa8JAsXXvlC7F2PU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.14.3-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-qliTUuYbsiE1GnnllG1WkW48WVeDmUiErM2zuX/p1Ek=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/cfgv-3.5.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-uylyXQ2E9emPIh8vCvutSkTNZ7AWq0g4hZLJQLvXWl4=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/python-tzdata-2026.6-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-GsxqQg78W2TDhMHzX0kSmWb4oSyTtLsr3DAHnl3J2Kg=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/execnet-2.1.2-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-y2DvPgYxyLrLT3BXGW3uRJYJGiK6o7tLm8yxLH4ckhs=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.5.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-4ESx7IKeLiT5cfo/NAjrJvHbg25SGljwiw/ZoD/uR74=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/idna-3.20-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-lFjhN2d3nV20jANbonoa+EP95Rh9NMF7YAduGINehjc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/networkx-3.7-pyhc364b38_0.conda"
+        },
+        {
+          "hash": "sha256-S86+j19Em3KL0BQOOMA2Bg8i0xBI4MeYC/TNas2tK2I=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geographiclib-2.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-F63WCdGjHIdOOaA5NQcr5ZvK+wbUI4Ps6r6nRtEuYCU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/setuptools-84.2.1-pyhe730653_0.conda"
+        },
+        {
+          "hash": "sha256-c4lBKkIETeoQUFGcRqUVcse8Qvu7Gyy0fNC7Gxy5m6g=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geoarrow-types-0.4.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-0JxHws9FbeXAn6ZtLDxQNaofoiihmDpDPEe4dqoWzpA=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/munkres-1.1.4-pyhd8ed1ab_1.conda"
+        },
+        {
+          "hash": "sha256-u0euxTOGlf+O+928ZpBko7EP40rYgfuK1dZPv6aRDtE=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/cycler-0.12.1-pyhcf101f3_2.conda"
+        },
+        {
+          "hash": "sha256-KaDvDgW+rnvkBNCPa4Xc1RjqvwBozZvz8cf6TqEcMks=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/certifi-2026.10.23-pyhd8ed1ab_2.conda"
+        },
+        {
+          "hash": "sha256-LYiPkK8GhgRIgsdBk+yAqQ7BlDFF2Up7GwSJWKzaGEg=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.16.0-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-3BDWTUuaExAIOy9WNBarRVYO4qBP1rqrQPIj8rGrN7w=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.3.3-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-mvsMLAiTMDIaIZx+5aJTE71XTUAkvmBsuzPnpXNd9mI=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/click-8.5.0-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-G2EkIwu05XGxuUAVN+z/V1t7EJzDoh7gGfZeCDuDmas=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/attrs-26.1.0-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-uUOfFxb/WAzlbptKTffqkuXtK9yVZ9Jc3/Ij1iwxg6g=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/xyzservices-2026.9.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-Yk1CQ6mi6+xjSVh9NL1kyLBKtu0XSs8QLgKkQa/eWuA=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pytz-2026.6-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-BdNK47SZc8BcDy8PdC4gKsxhRfczRgoHmJRLIx79XBo=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pip-26.2.2-pyh145f28c_2.conda"
+        },
+        {
+          "hash": "sha256-xDJiaxZ2i42rIov7cG9wYMLUYqIcUW0kD2jy+QK1oEQ=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/packaging-26.3-pyhc364b38_0.conda"
+        },
+        {
+          "hash": "sha256-fRcnIBLnR5ulj4pytSLT6I5oN6BKERonj/QXqoI2QlU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/fsspec-2026.9.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-/JynNIpPJf7SB58hU+zc9fnPKgvDbEFyQgygnhhJ33s=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/jinja2-3.1.6-pyhcf101f3_1.conda"
+        },
+        {
+          "hash": "sha256-MH3W7JAUDDz0FxBxsOXocKvsMU9FZcHt1bxDPpQs3MA=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/h2-4.4.1-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-lrdqzlg0BM5PvCNLqmzbPeSFiHkTEE1KxRmU+bZlZpY=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/joblib-1.6.0-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-/EG6ddrUKsuxOx10Aam9GZrdyChop5yT8Nss2Aw7uGY=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/python-discovery-1.9.2-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-gDj3BIyXKZ9/58jOlX2mW4ramDmv0PZuNF0wlggtqXU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/python-dateutil-4.0.0-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-B4ud7hFNn0Y6NMpe4IBU2cuq/P/v4bdkYFM4Bc1aNE8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geopy-2.5.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-rfe7tjQ5FXVvOaHP7IcOJcGePEt9syM77L6HyXC0F8o=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/nodeenv-1.12.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-D/pLefAuPuRbfErlV01zY0aSYjXcKBaRlhPVr0FSua8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geoarrow-pyarrow-0.3.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-7mzzRtAX2VQlW7y9tCTN3qTRTk7X6YE+Qp2x15XQEUQ=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.3.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-sUGTPs41GPbXt137WUUeLya0BaRMGOJRioPpoC4JMVw=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.16.0-h69aa097_0.conda"
+        },
+        {
+          "hash": "sha256-Yfk3Nwnn2QCeOgYrE12+RLFuaEpPz+LdYkFDvA+A1AI=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/snuggs-1.4.7-pyhd8ed1ab_2.conda"
+        },
+        {
+          "hash": "sha256-QquagsTkaG18Ki1RGHeJW/6UbsLC7Gbk4VkwBvoyRF8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/mercantile-1.2.1-pyhd8ed1ab_1.conda"
+        },
+        {
+          "hash": "sha256-GlKuH+v8+49WIR0Ug6GsRBmwAot8Pp5hlgopiXikI5Y=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/cligj-0.7.2-pyhd8ed1ab_2.conda"
+        },
+        {
+          "hash": "sha256-uh7m4rK+PaQdcNDVHRFZAQ3pAKo/M/zq6oxS6b0wom4=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/click-plugins-1.1.1.2-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-iAHNW04PAgO3oY6N7xWSnzQT6T4tqI1bkYtzVFQQb4U=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/affine-3.0.1-pyhecae5ae_0.conda"
+        },
+        {
+          "hash": "sha256-Gs+Hx32SDt0JjdyR+nhe/BDehxRl3uD0Y4FbF24Bnos=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/branca-0.8.2-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-xVEcGQq1UWjKQS88VFkvv2d65iUHhMtysienzz9Tj30=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/urllib3-2.8.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-LaNoD0OUXTvCt7RbfHn5DcSJd6c36ZcFwxLp/SIdmPk=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.15.2-pyh5ded981_0.conda"
+        },
+        {
+          "hash": "sha256-qc81cegKToaZJQIGjrHSmhCeiDRcObq/A7EEUIlQVq8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pytest-9.2.0-pyhc364b38_1.conda"
+        },
+        {
+          "hash": "sha256-rtS53PaOwqdeVkX+0U13/YhNONLlK/pu9LJ42QzYh4E=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.15.0-pyha770c72_0.conda"
+        },
+        {
+          "hash": "sha256-6MuyQNS+9yueEdvGQ2V283QQdwiiS+PgrZomZjd5xIE=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/psycopg-3.3.4-pyh848bd53_0.conda"
+        },
+        {
+          "hash": "sha256-FxUkaxnJ+F7gIpM7SEXy/BSskYSYG3t9m3KL7I6ViNo=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-t7WKW+CQiDGYQRM3uZr7ZAQSeAnD0cn5bpm1nzYXepY=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pytest-xdist-3.8.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-lWEIoUhAwyCeDOJAS3rK/WwARJyZ11yU7omdNTb+TVU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pytest-doctestplus-1.7.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-ROQpGTl70Av6pHNYpsqT1MIUk6jBhgAXYhLsIajSXKU=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pytest-cov-7.1.0-pyhcf101f3_0.conda"
+        },
+        {
+          "hash": "sha256-CB5SxGEoML8f1KnHjuuvM10ThddN39MosbLya5g4SOs=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pooch-1.9.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-eC+hhtdnf9O8H/ettMw1hffSxxd8MLy84h+MF3E1xSA=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/folium-0.20.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-UerYXTD07v9BxViySrCZKm2dCK8+iH06x9LBaWcLgH8=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/codecov-2.1.13-pyhd8ed1ab_1.conda"
+        },
+        {
+          "hash": "sha256-xi6gjyvR34dqaHL0tiDy97tmEVrJPyLgaIyQoaS7Qoc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geodatasets-2026.10.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-Fy/LlkkkSzgIPTJCVQhB6bJPr+tVMOoSW0TzZBcvTp0=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cffi-2.1.1-py314h618e29d_3.conda"
+        },
+        {
+          "hash": "sha256-6O6Fu5SsSAe13+na+1PDayzXiL5hPX5MJNHkWZ8pRH8=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fonttools-4.68.0-py314haf53d71_0.conda"
+        },
+        {
+          "hash": "sha256-RGPHwQYA1qRQJh+YA1/iM1b6dNVPfYy2kLGdNyntVGo=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pyproj-3.8.0-py314h2eba446_3.conda"
+        },
+        {
+          "hash": "sha256-3041bHGQDaZMFebr2HQsp6iKuTqA2q0OidpsviQ2FMM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/sqlalchemy-2.1.6-py314hef190fd_0.conda"
+        },
+        {
+          "hash": "sha256-xF38XGq/cFF5Gj9k9A6gZ5SGEBtVAPNot7dz1ZOrBgU=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pyogrio-0.13.0-py314h2029452_1.conda"
+        },
+        {
+          "hash": "sha256-HPMTekYrp1jtTppwIlNQrx+SNgmhB6KYuwMiCT3M74I=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/scikit-learn-1.9.1-np2py314hf2dd71b_1.conda"
+        },
+        {
+          "hash": "sha256-Th8aTH3E0px3C46d8hvSKh3o7MHnaXk4UPy8W6M2KX4=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pandas-3.1.0-np2py314h78ec565_0.conda"
+        },
+        {
+          "hash": "sha256-KuNl1/GMY9VpZnflDh2Xg2G4rtL9Ka86wn1KtmjYY2g=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fiona-1.10.1-py314h7afc4b4_8.conda"
+        },
+        {
+          "hash": "sha256-ayeUgNyLSdmBbf9mD860n+K8pfdF4+enA9GE92FUpUM=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/rasterio-1.5.2-py314h38f893b_2.conda"
+        },
+        {
+          "hash": "sha256-SzwJ7Q8axdKB9iWWVtBzGlX7X5IvZWZvYSTpqa7guCQ=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py314hc574cfc_1.conda"
+        },
+        {
+          "hash": "sha256-Ej1dSiaeltXAEzYUz/yrVruvMU2rZSkNV/s+vxeYb+A=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/matplotlib-base-3.11.2-py314heb334b3_1.conda"
+        },
+        {
+          "hash": "sha256-OoVuu/JXGsZDRZvju2UJejO7xRtzAs6wJtUX5kc+r3k=",
+          "url": "https://conda.anaconda.org/conda-forge/osx-arm64/matplotlib-3.11.2-py314h314fc0d_1.conda"
+        },
+        {
+          "hash": "sha256-LWvlGUeTdFp1ecHvbgm+tUV6BGMSTT7xYePBMOaWXJA=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geoalchemy2-0.20.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-/cEIptFCtdJnQAwQKuogWJk1nPY16+g6iYqatHfkzF4=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geopandas-base-1.2.0-pyha770c72_0.conda"
+        },
+        {
+          "hash": "sha256-eRE38+EHxzMVx0uwx7405ffDbaGCjvvEWEVEMREhSEw=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/mapclassify-2.11.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-Y3WuLijeEwhDq3ypgTK/g9mI9/1wNOPb5kYwjb6sov0=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/identify-2.6.20-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-/XIICkJY+ujCAICRbTP9ku1uSKWPQrYmapLckqj0Zf0=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/contextily-1.7.1-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-ngUrbInLLJM6ucpNJoTdJGHQnKoCyw49q7Uvj/KxXlc=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/geopandas-1.2.0-pyhd8ed1ab_0.conda"
+        },
+        {
+          "hash": "sha256-2AjqY9aFzD4JamKoWCCGS2VGe0wnPHZJoUUBEvApWqQ=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pre-commit-4.7.0-pyha770c72_0.conda"
+        },
+        {
+          "hash": "sha256-5Xk/5DaPzVAAbQ6BB7AzFo+ii5mZExIqxow1YDKeyas=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/libpysal-4.15.1-pyhc364b38_0.conda"
+        },
+        {
+          "hash": "sha256-kkQ7lFADRM7PmRaFHbZQr0Knh7UraguLiUv39brtbB4=",
+          "url": "https://conda.anaconda.org/conda-forge/noarch/pointpats-2.6.0-pyhd8ed1ab_0.conda"
+        }
+      ],
+      "pip": [],
+      "pipBuild": [],
+      "programs": [
+        "CreateDOMDocument",
+        "DOMCount",
+        "DOMPrint",
+        "EnumVal",
+        "MemParse",
+        "PParse",
+        "PSVIWriter",
+        "Redirect",
+        "SAX2Count",
+        "SAX2Print",
+        "SAXCount",
+        "SAXPrint",
+        "SCMPrint",
+        "SEnumVal",
+        "StdInParse",
+        "XInclude",
+        "adig",
+        "ahost",
+        "brotli",
+        "bsdcat",
+        "bsdcpio",
+        "bsdtar",
+        "bsdunzip",
+        "bunzip2",
+        "bzcat",
+        "bzcmp",
+        "bzdiff",
+        "bzegrep",
+        "bzfgrep",
+        "bzgrep",
+        "bzip2",
+        "bzip2recover",
+        "bzless",
+        "bzmore",
+        "c_rehash",
+        "cairo-trace",
+        "captoinfo",
+        "cct",
+        "cffi-gen-src",
+        "checksum-profile",
+        "cjpeg",
+        "clear",
+        "compile_et",
+        "coverage",
+        "cs2cs",
+        "csv-import",
+        "curl-config",
+        "derb",
+        "djpeg",
+        "elasticurl",
+        "elasticurl_cpp",
+        "elastipubsub",
+        "elastipubsub5",
+        "elastishadow",
+        "f2py",
+        "fax2ps",
+        "fax2tiff",
+        "fc-cache",
+        "fc-cat",
+        "fc-conflist",
+        "fc-genconf",
+        "fc-list",
+        "fc-match",
+        "fc-pattern",
+        "fc-query",
+        "fc-scan",
+        "fc-validate",
+        "fio",
+        "fonttools",
+        "freetype-config",
+        "fribidi",
+        "gdal",
+        "gdal-config",
+        "gdal_contour",
+        "gdal_create",
+        "gdal_footprint",
+        "gdal_grid",
+        "gdal_rasterize",
+        "gdal_translate",
+        "gdal_viewshed",
+        "gdaladdo",
+        "gdalbuildvrt",
+        "gdaldem",
+        "gdalenhance",
+        "gdalinfo",
+        "gdallocationinfo",
+        "gdalmanage",
+        "gdalmdiminfo",
+        "gdalmdimtranslate",
+        "gdalsrsinfo",
+        "gdaltindex",
+        "gdaltransform",
+        "gdalwarp",
+        "genbrk",
+        "gencfu",
+        "gencnval",
+        "gendict",
+        "genrb",
+        "geod",
+        "geos-config",
+        "geosop",
+        "gflags_completions.sh",
+        "gie",
+        "gif2rgb",
+        "gifbuild",
+        "gifclrmp",
+        "giffix",
+        "giftext",
+        "giftool",
+        "gnmanalyse",
+        "gnmmanage",
+        "grpc_cpp_plugin",
+        "grpc_csharp_plugin",
+        "grpc_node_plugin",
+        "grpc_objective_c_plugin",
+        "grpc_php_plugin",
+        "grpc_python_plugin",
+        "grpc_ruby_plugin",
+        "gss-client",
+        "h2benchmark",
+        "icu-config",
+        "icuexportdata",
+        "icuinfo",
+        "idle3",
+        "idle3.14",
+        "infocmp",
+        "infotocap",
+        "invgeod",
+        "invproj",
+        "jpegtran",
+        "jpgicc",
+        "k5srvutil",
+        "kadmin",
+        "kdestroy",
+        "kinit",
+        "klist",
+        "kpasswd",
+        "krb5-config",
+        "kswitch",
+        "ktutil",
+        "kvno",
+        "ldapadd",
+        "ldapcompare",
+        "ldapdelete",
+        "ldapexop",
+        "ldapmodify",
+        "ldapmodrdn",
+        "ldappasswd",
+        "ldapsearch",
+        "ldapurl",
+        "ldapvc",
+        "ldapwhoami",
+        "libdeflate-gunzip",
+        "libdeflate-gzip",
+        "libpng-config",
+        "libpng16-config",
+        "linkicc",
+        "lz4",
+        "lz4c",
+        "lz4cat",
+        "makeconv",
+        "minigzip",
+        "minizip",
+        "mqtt5_app",
+        "mqtt5_canary",
+        "mqtt5canary",
+        "ncurses6-config",
+        "ncursesw6-config",
+        "nearblack",
+        "nghttp",
+        "nghttpd",
+        "nghttpx",
+        "numpy-config",
+        "ogr2ogr",
+        "ogrinfo",
+        "ogrlineref",
+        "ogrtindex",
+        "openssl",
+        "opj_compress",
+        "opj_decompress",
+        "opj_dump",
+        "orc-contents",
+        "orc-memory",
+        "orc-metadata",
+        "orc-scan",
+        "orc-statistics",
+        "pal2rgb",
+        "pcre2-config",
+        "pcre2grep",
+        "pcre2test",
+        "pg_config",
+        "pkgdata",
+        "png-fix-itxt",
+        "pngfix",
+        "ppm2tiff",
+        "proj",
+        "projinfo",
+        "projsync",
+        "protoc",
+        "protoc-35.1.0",
+        "protoc-gen-upb",
+        "protoc-gen-upb-35.1.0",
+        "protoc-gen-upb_minitable",
+        "protoc-gen-upb_minitable-35.1.0",
+        "protoc-gen-upbdefs",
+        "protoc-gen-upbdefs-35.1.0",
+        "psicc",
+        "pydoc",
+        "pydoc3",
+        "pydoc3.14",
+        "pyftmerge",
+        "pyftsubset",
+        "pyproj",
+        "python",
+        "python3",
+        "python3-config",
+        "python3.1",
+        "python3.14",
+        "python3.14-config",
+        "qconvex",
+        "qdelaunay",
+        "qhalf",
+        "qhull",
+        "qvoronoi",
+        "raw2tiff",
+        "rbox",
+        "rdjpgcom",
+        "reset",
+        "rio",
+        "sclient",
+        "sim_client",
+        "sozip",
+        "sqlite3",
+        "sqlite3_analyzer",
+        "tabs",
+        "tclsh",
+        "tclsh8.6",
+        "tic",
+        "tiff2bw",
+        "tiff2pdf",
+        "tiff2ps",
+        "tiff2rgba",
+        "tiffcmp",
+        "tiffcp",
+        "tiffcrop",
+        "tiffdither",
+        "tiffdump",
+        "tiffinfo",
+        "tiffmedian",
+        "tiffset",
+        "tiffsplit",
+        "tificc",
+        "timezone-dump",
+        "tjbench",
+        "toe",
+        "tput",
+        "transicc",
+        "tset",
+        "ttx",
+        "unlz4",
+        "unzstd",
+        "uuclient",
+        "wish",
+        "wish8.6",
+        "wrjpgcom",
+        "xml2-config",
+        "xmlcatalog",
+        "xmllint",
         "zstd",
         "zstdcat",
         "zstdgrep",

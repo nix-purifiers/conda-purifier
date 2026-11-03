@@ -2,8 +2,8 @@
   "inputs": [
     "conda-lock.yml"
   ],
-  "inputsHash": "6b765a0fd03ffb03a812278ad7563868b666d19a7b74092ba1727699aaea8d46",
-  "lockHash": "68d75ae1f232c8ba5400d91b63a3ba4353b0bd27b83906ee062bec5334aeb9c0",
+  "inputsHash": "4df829268650a79aaa8227537619dac58e2454afbf478f79fd3e1140cc4e8aeb",
+  "lockHash": "cf0531901b8ccf0fd8d6348b99b720b2d10b5b9a95ece5e04106a94d38f2df88",
   "platforms": {
     "linux-64": {
       "programs": [
@@ -16,6 +16,16 @@
       ]
     },
     "linux-aarch64": {
+      "programs": [
+        "unzstd",
+        "zstd",
+        "zstdcat",
+        "zstdgrep",
+        "zstdless",
+        "zstdmt"
+      ]
+    },
+    "osx-arm64": {
       "programs": [
         "unzstd",
         "zstd",

@@ -45,6 +45,15 @@ class TestLockRun(unittest.TestCase):
         self.assertIn("manylinux_2_17_aarch64", tags)
         self.assertEqual(tags[-2:], ["manylinux2014_aarch64", "linux_aarch64"])
 
+    def test_macos_tags(self):
+        cp.MACOS = "14.0"
+        self.assertEqual(cp.macos_tags("osx-arm64"), ["macosx_14_0_arm64"])
+        self.assertEqual(cp.macos_tags("osx-64"), ["macosx_14_0_x86_64"])
+
+    def test_default_platforms(self):
+        self.assertEqual(cp.default_platforms("linux-aarch64"), ["linux-64", "linux-aarch64"])
+        self.assertEqual(cp.default_platforms("osx-arm64"), ["linux-64", "linux-aarch64", "osx-arm64"])
+
     def test_inputs_hash_keeps_line_endings(self):
         with tempfile.TemporaryDirectory() as root:
             with open(os.path.join(root, "environment.yml"), "wb") as f:
