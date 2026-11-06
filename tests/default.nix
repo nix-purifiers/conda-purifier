@@ -33,6 +33,33 @@ let
     name = "bzip2-env";
   };
 
+  prefetchedSource = pkgs.runCommand "prefetched-project-source" { } ''
+    mkdir -p $out
+    cp -r ${./fixtures/explicit}/. $out/
+    chmod -R u+w $out
+    mkdir -p $out/.conda-purifier $out/nested/.conda-purifier
+    ln -s /unavailable-prefetch-downloads $out/.conda-purifier/downloads
+    echo user-generated > $out/generated.txt
+    ln -s generated.txt $out/user-link
+    echo nested-user-state > $out/nested/.conda-purifier/keep
+    echo user-result > $out/result-user
+    echo user-git > $out/.git
+  '';
+  prefetchedTests = build {
+    src = prefetchedSource;
+    testCommand = ''
+      test ! -e .conda-purifier
+      grep -qx user-generated generated.txt
+      grep -qx user-generated user-link
+      grep -qx nested-user-state nested/.conda-purifier/keep
+      grep -qx user-result result-user
+      grep -qx user-git .git
+      cmp conda-purifier.lock.json ${./fixtures/explicit/conda-purifier.lock.json}
+      cmp linux-64.txt ${./fixtures/explicit/linux-64.txt}
+      echo hello | bzip2 | bzip2 -d | grep -qx hello
+    '';
+  };
+
   # A pip: section with a Mercurial and a Subversion requirement.
   vcs = build { src = ./fixtures/vcs; };
 
@@ -174,6 +201,8 @@ in
     echo hello | bzip2 | bzip2 -d | grep -qx hello
     touch $out
   '';
+
+  test-source-private-state = prefetchedTests.tests;
 
   conda-lock =
     pkgs.runCommand "conda-lock-check" { nativeBuildInputs = [ condaLock.packages.zstd ]; }
