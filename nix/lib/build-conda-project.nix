@@ -429,6 +429,15 @@ let
       "python -c pass"
     else
       "true";
+
+  # Prefetch leaves GC-root links here. They are private tool state, not
+  # project inputs, and their targets need not be in the test closure.
+  # Keep every other entry, including nested names and user-generated files.
+  testSrc = builtins.path {
+    path = src;
+    name = "source";
+    filter = path: type: path != "${toString src}/.conda-purifier";
+  };
 in
 {
   packages = programs // {
@@ -436,7 +445,7 @@ in
   };
 
   tests = runCommand "${envName}-tests" { } ''
-    cp -rL --no-preserve=mode ${src} source
+    cp -rL --no-preserve=mode ${testSrc} source
     cd source
     export HOME=$TMPDIR
     ${activate}
