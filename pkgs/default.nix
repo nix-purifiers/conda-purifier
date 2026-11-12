@@ -9,8 +9,8 @@
   conda-purifier = callPackage ./conda-purifier { };
 
   # The builder, a package for callPackage in this scope
-  # (nix/lib/build-conda-project.nix). `lib` is the library of this flake's
+  # (pkgs/build-conda-project/default.nix). `lib` is the library of this flake's
   # closure, with the shared purifier library under lib.purifier and
   # readLock under lib.conda-purifier.
-  buildCondaProject = callPackage ../nix/lib/build-conda-project.nix { inherit lib; };
+  buildCondaProject = callPackage ./build-conda-project { inherit lib; };
 }

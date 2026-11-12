@@ -99,7 +99,7 @@ let
   );
 
   inherit (stdenv.hostPlatform) system;
-  subdir = (import ./subdir.nix).ofSystem system;
+  subdir = (import ../../lib-overlays/default/subdir.nix).ofSystem system;
   locked =
     lock.outputs.environment
     // lock.outputs.environment.platforms.${system} or (throw (

@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation {
     fileset = lib.fileset.unions [
       ./conda_purifier.py
       ./test_conda_purifier.py
-      ../../nix/lib
+      ./interactive.nix
     ];
   };
   nativeBuildInputs = [ makeWrapper ];
@@ -47,7 +47,8 @@ stdenvNoCC.mkDerivation {
     runHook preInstall
     mkdir -p "$out/bin" "$out/libexec/conda-purifier" "$out/share/conda-purifier"
     cp pkgs/conda-purifier/conda_purifier.py "$out/libexec/conda-purifier/"
-    cp -r nix/lib "$out/share/conda-purifier/nix-lib"
+    mkdir -p "$out/share/conda-purifier/nix-lib"
+    cp pkgs/conda-purifier/interactive.nix "$out/share/conda-purifier/nix-lib/"
     makeWrapper ${python.interpreter} "$out/bin/conda-purifier" \
       --add-flags "$out/libexec/conda-purifier/conda_purifier.py" \
       --prefix PATH : ${
