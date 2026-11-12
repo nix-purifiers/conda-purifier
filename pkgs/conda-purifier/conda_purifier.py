@@ -4,7 +4,7 @@
 `conda-purifier lock` records every file a conda environment needs in
 conda-purifier.lock.json: the conda packages of each platform, and the
 packages of the environment's `pip:` section with what their builds need.
-`lib.conda-purifier.buildCondaProject` (nix/lib/build-conda-project.nix)
+`lib.conda-purifier.buildCondaProject` (pkgs/build-conda-project/default.nix)
 builds the environment from that lockfile in the Nix sandbox.
 `conda-purifier prefetch` builds the same environment for day-to-day work
 and keeps it with GC roots, and `conda-purifier publish` uploads the wheels
@@ -168,7 +168,7 @@ def input_path(root, name):
 
 
 def inputs_hash(root, inputs):
-    """The hash of the lock's inputs; nix/lib/lock.nix computes the same."""
+    """The hash of the lock's inputs; lib-overlays/default/lock.nix computes the same."""
     text = ""
     for name in inputs:
         # newline="" keeps the bytes builtins.readFile sees.
@@ -178,7 +178,7 @@ def inputs_hash(root, inputs):
 
 
 def lock_hash(lock):
-    """The hash of a lockfile without its lockHash; nix/lib/lock.nix computes the same.
+    """The hash of a lockfile without its lockHash; lib-overlays/default/lock.nix computes the same.
 
     The JSON is the form builtins.toJSON writes: sorted keys, no spaces and
     characters as they are.
@@ -273,7 +273,7 @@ def check_complete(root, lock):
 
     A conda-lock.yml or an explicit spec file may list a file with an MD5
     hash only; the lockfile records the SHA-256 the lock run computed, by
-    URL without a token. nix/lib/lock.nix makes the same check.
+    URL without a token. lib-overlays/default/lock.nix makes the same check.
     """
     kind = source_kind(input_path(root, lock["inputs"][0]))
     urls = []
@@ -532,7 +532,7 @@ def unquote(value):
 def conda_lock_packages(text):
     """The packages of a conda-lock.yml, read line by line.
 
-    Nix has no YAML reader, so nix/lib/lock.nix reads conda-lock.yml with
+    Nix has no YAML reader, so lib-overlays/default/lock.nix reads conda-lock.yml with
     these same rules, which fit the layout conda-lock writes. The lock run
     compares the result with a YAML parser's and refuses a file whose
     layout differs.
@@ -1021,7 +1021,7 @@ def verify_pip(root, env_dir, python, entries, build_entries, work):
 
 
 def recorded_entry(e):
-    """The fields of a pip entry that nix/lib/lock.nix cannot derive.
+    """The fields of a pip entry that lib-overlays/default/lock.nix cannot derive.
 
     lock.nix derives the path of a download from its URL or its name, and
     sets the checkout options pip itself uses.
